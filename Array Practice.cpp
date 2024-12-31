@@ -1,0 +1,122 @@
+//#include<iostream>
+//using namespace std;
+//int main(){
+//	int g = 0;
+//	int Arr[4]={};
+//	for(int i = 0 ; i < 4 ; i++)//Loop used for taking numbrs from user
+//	cin>>Arr[i];
+//	
+//	for(int i = 0;i < 4 ; i++){//Loop used for checking which num is greater
+//		if(g > Arr[i])
+//		g = Arr[i];
+//	}
+//	cout<<"minimum num is "<<g<<endl;
+//
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//
+//
+//int main (){
+//	int g = INT_MAX;
+//	int A[5] = { };
+//	for(int i = 0; i < 5 ; i++)
+//	cin >> A[i];
+//	
+//	for(int i = 0 ; i < 5 ; i++)
+//	{
+//		if(g > A[i])
+//		{
+//			g = A[i];
+//		}
+//	}
+//	cout<<"Greater num is "<<g<<endl;
+//	return 0;
+//}
+
+//#include<iostream>
+//using namespace std;
+//
+//int main(){
+//	
+//	int g ;
+//	int A[3]={};
+//	
+//	for(int i = 0 ; i < 3 ; i++)
+//	cin >> A[i];
+//	
+//	for(int i = 1 ; i < 3 ; i++)
+//	{
+//		if(g > A[i]){
+//			g = A[i];
+//		}
+//	}
+//	cout<< g <<endl;
+//	return 0;
+//}
+
+
+//#include<iostream>
+//using namespace std;
+//int minimum(int);
+//int g = INT_MAX;
+//	int A[5]={ };
+//
+//	for (int i = 0 ; i < 5 ; i++)
+//	cin >> A[i];
+//	
+//	for(int i = 0 ; i < 5 ; i++){
+//		if(g > A[i])
+//		{
+//		   g = A[i];
+//		   return minimum;	
+//		}
+//	}
+//
+//int main(){
+//	
+//		cout<<"Give the five numbers to Array"<<endl;
+//	cout<<"Minimum numbr is "<<minimum<<endl;
+//	
+//	return 0;
+//}
+
+
+#include <iostream>
+using namespace std;
+
+// ???? ??????? ????? ?? ?? ?? ?? ???? ???? ???? ??
+int Minimum(int arr[], int size) {
+    int min = arr[0]; // ??????? ??? ?? ???? ??? ?? ?? ????? ???? ???? ??
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < min) { // ??? ?????? ??? ????? ?? ?? ??? ?? ?? ?? ???? ??? ???
+            min = arr[i];
+        }
+    }
+    return min; // ?? ?? ?? ???? ???? ????
+}
+
+int main() {
+    int numbers[5]; // 5 ????? ?? ??? ??
+    cout << "Enter 5 numbers: " << endl;
+    
+    // ???? ?? 5 ????? ????
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+    
+    // ???? ??????? ????? ??? ???? ??? ?? ?? ?? ???? ???? ????
+    int minimum = Minimum(numbers, 5);
+    
+    // ?? ?? ?? ???? ???? ????
+    cout << "The minimum number is: " << minimum << endl;
+    
+    return 0;
+}
+
+
+
+
+
